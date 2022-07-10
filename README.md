@@ -40,6 +40,17 @@ dev_dependencies:
     sdk: flutter              # new
   test: ^1.14.4               # new for other packages for unit or widget testing.
 ```
+### Widget Testing
+
+```
+testWidgets('Add and remove a todo', (tester) async {
+   // Testing Using Function name
+  await tester.pumpWidget(const "FunctionName"());
+
+  // Enter 'hi' into the TextField.
+  await tester.enterText(find.byType(TextField), 'hi');
+});
+```
 
 
 
