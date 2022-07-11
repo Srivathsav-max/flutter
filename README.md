@@ -1,5 +1,7 @@
 # Flutter Testing 
 
+## Note - Using **Pubspec** VS code Extension for adding different packages in flutter yaml File
+
 In general we are two types of testing
 * Manual - Which in person tests every functionality and performance of an app 
 * Automated - Here we instructs the software by a program which run in an automated way which like UnitTests Without a human prescence.
