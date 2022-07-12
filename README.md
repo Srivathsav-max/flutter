@@ -13,6 +13,8 @@ Flutter Comes under an automated testing platform Which It consists in three typ
 * Widget Testing
 * Integration Testing
 
+> As per my learning i really preffer the following testing preferences - Unit Testing -> Integration Testing -> Widget Testing 
+
 > Below Table Shows the Total Efficency and performance of each Testing Methods.
 
 |                   | Unit          | Widget        | Integration |
