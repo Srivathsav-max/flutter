@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:instagram_clone/resources/auth_methods.dart';
 import 'package:instagram_clone/screens/signup_screen.dart';
 import 'package:instagram_clone/utils/colors.dart';
 import 'package:instagram_clone/utils/utils.dart';
 import 'package:instagram_clone/widgets/text_field.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../responsive/mobile_screen_layout.dart';
 import '../responsive/responsive_layout_screen.dart';
@@ -57,6 +59,14 @@ class _LoginScreenState extends State<LoginScreen> {
       _isLoading = false;
     });
   }
+
+  // launchUrl(String url) async {
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // } //launching url method
 
   void navigateToSignUp() {
     Navigator.of(context)
@@ -141,6 +151,25 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
       ),
+      // floatingActionButton: Column(
+      //   children: [
+      //     Padding(
+      //       padding: const EdgeInsets.only(top: 20),
+      //       child: InkWell(
+      //         onTap: () {
+      //           const url = 'https://www.instagram.com/';
+      //           launchUrl(url);
+      //         },
+      //         child: Image.network(
+      //           'https://www.svgrepo.com/show/232434/whatsapp.svg',
+      //           height: 40,
+      //           width: 40,
+      //           fit: BoxFit.contain,
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
